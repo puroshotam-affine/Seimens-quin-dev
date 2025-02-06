@@ -108,7 +108,7 @@ if faq_df is not None:
                     st.subheader("Visualization")
                     plot_image = add_plot(plot_path)
                     if plot_image:
-                        st.image(plot_path, caption="Visualization", use_column_width=True)
+                        st.image(plot_path, caption="Visualization", use_container_width=True)
                     else:
                         st.warning("No visualization available.")
                 else:
