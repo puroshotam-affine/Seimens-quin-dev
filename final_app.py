@@ -80,9 +80,9 @@ if faq_df is not None:
                     
                     # Extract values from the matched row
                     sql_query = row.get('SQL Query', '')
-                    dataframe_path = os.path.join(BASE_PATH, str(row.get('Data', '')).replace('"', '').replace(r'\',r'/'))
+                    dataframe_path = os.path.join(BASE_PATH, str(row.get('Data', '')).replace('"', '').replace(r'\',r'//'))
                     insights = row.get('Insights', 'No insights available.')
-                    plot_path = os.path.join(BASE_PATH, str(row.get('Plot', '')).replace('"', '').replace(r'\',r'/'))
+                    plot_path = os.path.join(BASE_PATH, str(row.get('Plot', '')).replace('"', '').replace(r'\',r'//'))
 
                     # Display SQL Query
                     time.sleep(3)
